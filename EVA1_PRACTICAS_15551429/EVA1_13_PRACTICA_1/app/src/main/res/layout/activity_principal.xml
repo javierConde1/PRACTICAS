@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Cafeteria"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/rdrProd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdAmericano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Americno ($20)" />
+
+            <RadioButton
+                android:id="@+id/rdCapu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Capuchino ($48)" />
+
+            <RadioButton
+                android:id="@+id/rdExpreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expreso ($30)" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Cantidad"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <EditText
+            android:id="@+id/edTxCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hapticFeedbackEnabled="false"
+            android:hint="Ingrese cantidad"
+            android:inputType="textPersonName"
+            android:text="1"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extras"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <CheckBox
+            android:id="@+id/chbCrema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crema ($1)"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="167dp" />
+
+        <CheckBox
+            android:id="@+id/chbAzucar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Azucar ($1)"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="DESCRIPCION DE LA COMPRA"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+        <TextView
+            android:id="@+id/txvDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <Button
+            android:id="@+id/btnTotal"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="Total"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
